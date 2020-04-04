@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Cart</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<link rel="stylesheet" type="text/css" th:href="@{/vendor/bootstrap.css}"/>
+	<link rel="stylesheet" type="text/css" th:href="@{/vendor/font-awesome.css}"/>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Sacramento&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/cart.css}"/>
+</head>
+<body>
+	<div class="thanh-menu">
+ 		<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+ 		  <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+ 		    <span class="navbar-toggler-icon"></span>
+ 		  </button>
+ 		  <div class="collapse navbar-toggleable-sm" id="navbarSupportedContent">
+ 		  	<a class="navbar-brand logo" href="http://localhost:8080/home">Savory</a>
+ 		    <ul class="navbar-nav mr-auto float-md-right ds-dau" style="list-style: none;">
+				<li class="nav-item active">
+					<a class="nav-link" href="http://localhost:8080/home">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="http://localhost:8080/menu">Menu</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="http://localhost:8080/cart">Cart<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="http://localhost:8080/contact">Contact</a>
+				</li>
+			</ul>
+ 		  </div>
+ 		</nav>	
+ 	</div> <!-- het thanh-menu -->
+ 	<div class="noi-dung-cart">
+ 		<div class="container">
+ 			<div class="row">
+ 				<div class="col-xs text-xs-center">
+ 					<div class="tieu-de">
+ 						<h2 class="ten-td">My Cart</h2>
+ 					</div>
+ 				</div>
+ 			</div> <!-- het row -->
+ 			<div class="row mt-3 hang-nho">
+ 				<div class="col-xs-1">
+ 					<div class="form-check">
+ 					  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+ 					</div>
+ 				</div>
+ 				<div class="col-xs-4  hang-nho">
+ 					<img th:src="@{/images/Eggnog.jpg}" alt="" class="anh-cart">
+ 				</div>
+ 				<div class="col-xs-6 push-xs-1 hang-nho thong-tin">
+ 					<p class="ten-mon">Eggnog</p>
+ 					<p class="gia-mon">20.000đ</p>
+ 					<input type="text" class="form-control note" placeholder="Note">
+ 				</div>
+ 			</div> <!-- het row 1 mon -->
+ 			<div class="row mt-3 hang-nho">
+ 				<div class="col-xs-1">
+ 					<div class="form-check">
+ 					  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+ 					</div>
+ 				</div>
+ 				<div class="col-xs-4 hang-nho">
+ 					<img th:src="@{/images/mon1.jpg}" alt="" class="anh-cart">
+ 				</div>
+ 				<div class="col-xs-6 push-xs-1 hang-nho thong-tin">
+ 					<p class="ten-mon">Name</p>
+ 					<p class="gia-mon">20.000đ</p>
+ 					<input type="text" class="form-control note" placeholder="Note">
+ 				</div>
+ 			</div> <!-- het row 1 mon -->
+ 			<div class="row mt-3 hang-nho">
+ 				<div class="col-xs-1">
+ 					<div class="form-check">
+ 					  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+ 					</div>
+ 				</div>
+ 				<div class="col-xs-4 hang-nho">
+ 					<img th:src="@{/images/mon7.jpg}" alt="" class="anh-cart">
+ 				</div>
+ 				<div class="col-xs-6 push-xs-1 hang-nho thong-tin">
+ 					<p class="ten-mon">Eggnog</p>
+ 					<p class="gia-mon">20.000đ</p>
+ 					<input type="text" class="form-control note" placeholder="Note">
+ 				</div>
+ 			</div> <!-- het row 1 mon -->
+ 			<div class="row mt-3 hang-nho">
+ 				<div class="col-xs-1">
+ 					<div class="form-check">
+ 					  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+ 					</div>
+ 				</div>
+ 				<div class="col-xs-4 hang-nho">
+ 					<img th:src="@{/images/mon5.jpg}" alt="" class="anh-cart">
+ 				</div>
+ 				<div class="col-xs-6 push-xs-1 hang-nho thong-tin">
+ 					<p class="ten-mon">Eggnog</p>
+ 					<p class="gia-mon">20.000đ</p>
+ 					<input type="text" class="form-control note" placeholder="Note">
+ 				</div>
+ 			</div> <!-- het row 1 mon -->
+ 		</div> <!-- het container -->
+ 		<div class="phan-trang"></div>
+ 	</div> <!-- het noi-dung-cart -->
+ 	<div class="footer">
+ 		<div class="container mt-1">
+ 			<div class="row">
+ 				<div class="col-xs-4">
+ 				<div class="form-check">
+ 				  <input class="form-check-input" type="checkbox" value="" >
+ 				  <label class="form-check-label" for="defaultCheck1">
+ 				    Select All
+ 				  </label>
+ 				</div>
+ 			</div>
+ 			<div class="col-xs-4">
+ 				<p class="tong">Tổng:</p>
+ 			</div>
+ 			<div class="col-xs-4 float-xs-right">
+ 				<a href="#" class="btn btn-warning nut">Check out</a>
+ 			</div>
+ 			</div>
+ 		</div>
+ 	</div>
+	<script type="text/javascript" th:src="@{/vendor/bootstrap.js}"></script>
+	<script type="text/javascript" th:src="@{/js/cart.js}"></script>
+	<script type="text/javascript" th:src="@{/js/script.js}"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+*{margin:0; padding:0;}
+body{
+	width: 100%;
+	height: 2325px;
+}
+.logo{
+	font-family: 'Dancing Script', cursive;
+	font-weight: 700;
+	font-size: 35px;
+	color: white;
+}
+.ds-dau li {
+	font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 15px;
+
+}
+ul.ds-dau{
+	margin-right: 20px;
+}
+.noi-dung-contact{
+	width: 100%;
+	height: 2390px;
+	background-image: url(../images/food-drinks.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	background-attachment: fixed;
+}
+.chu-to{
+	color: white;
+	font-family: 'Dancing Script', cursive;
+	font-weight: 600;
+    margin-top: 80px !important;
+	display: block;
+}
+.nd-duoi{
+	background-color: #130f0ea1;
+	position: absolute;
+	top: 300px;
+	left: 0px;
+	z-index: 2;
+	height: 2043px;
+}
+.chu1,.chu2{
+	color: white;
+	font-family: 'Merriweather', serif;
+}
+.chu1 .display-5{
+	font-size: 22px;
+	font-weight: 600;
+}
+.chu1 .chu-nho{
+	color: yellow;
+	font-size: 15px;
+	font-weight: 400;
+	font-style: italic;
+}
+.chu2 .nd-chu{
+	font-size: 14px;
+}
+.icon {
+    color: white;
+    font-size: 25px;  
+}
+i.icon{
+	min-width: 30px;
+}
+ul.list-icon {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+    text-align: left;
+    margin:auto;
+}
+.chu-icon{
+	color: #ffc107eb !important;
+	font-size: 15px;
+	font-family: 'Merriweather', serif;
+	font-weight: 600;
+	text-decoration: none !important;
+	margin-left: 10px;
+}
+ul.list-icon li a{
+	margin-bottom: 20px;
+}
+ul.list-hour{
+	margin: auto;
+}
+ul.list-hour li{
+	display: flex;
+	flex-direction: row;
+	
+}
+ul.list-hour li p{
+	min-width: 68px;
+}
+.date{
+	color: lightblue;
+	font-size: 20px;
+	font-family: 'Dancing Script', cursive;
+	margin-right: 20px;
+}
+.hour{
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+.name,.mail{
+	width: 100%;
+	background-color: transparent;
+	border: 2px solid white;
+}
+.form-row .form-control.cmt{
+	background-color: transparent;
+	border: 2px solid white;
+}
+.footer{
+	/*background-color: #d2d2c4b3;*/
+	width: 100%;
+}
+h4.f-end{
+	font-family: 'Merriweather', serif;
+	font-size: 25px;
+	color: white;
+}
+p.f-chu-ky{
+	font-family: 'Sacramento', cursive;
+	font-size: 40px;
+	color: white;
+}
+.top {
+    margin-top: 30px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #042af9 !important;
+}
+@media (max-width: 576px){
+	*{}
+
+	.hour {
+	    font-size: 15px;
+	}
+
+	p.date {
+	    font-size: 15px;
+	}
+
+	span.chu-icon {
+	    font-size: 12px;
+	}
+
+	i.icon {
+	    font-size: 20px;
+	}
+
+	p.nd-chu {
+	    font-size: 12px !important;
+	}
+
+	p.chu-nho {
+	    font-size: 12px !important;
+	}
+
+	p.display-5 {
+	    font-size: 20px !important;
+	}
+	p.f-chu-ky {
+    font-size: 30px;
+	}
+
+	h4.f-end.mt-2 {
+	    font-size: 20px;
+	}
+}

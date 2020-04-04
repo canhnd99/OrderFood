@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<link rel="stylesheet" type="text/css" th:href="@{/vendor/bootstrap.css}"/>
+	<link rel="stylesheet" type="text/css" th:href="@{/vendor/font-awesome.css}"/>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Sacramento&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/contact.css}"/>
+</head>
+<body>
+	<div class="thanh-menu">
+ 		<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+ 		  <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+ 		    <span class="navbar-toggler-icon"></span>
+ 		  </button>
+ 		
+ 		  <div class="collapse navbar-toggleable-sm" id="navbarSupportedContent">
+ 		  	<a class="navbar-brand logo" href="http://localhost:8080/home">Savory</a>
+ 		    <ul class="navbar-nav mr-auto float-md-right ds-dau" style="list-style: none;">
+				<li class="nav-item active">
+					<a class="nav-link" href="http://localhost:8080/home">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="http://localhost:8080/menu">Menu  </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="http://localhost:8080/cart">Cart</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="http://localhost:8080/contact">Contact <span class="sr-only">(current)</span></a>
+				</li>
+			</ul>
+ 		  </div>
+ 		</nav>	
+ 	</div> <!-- het thanh-menu -->
+
+ 	<div class="noi-dung-contact">
+ 		<div class="container ">
+ 			<div class="row">
+ 				<div class="col-xs-12 text-xs-center">
+ 					<h2 class="chu-to mt-3">CONTACT</h2>
+ 				</div>
+ 			</div> <!-- het row -->
+		</div> <!-- het container -->
+		<div class="container-fluid nd-duoi mt-3">
+			<div class="row mt-3 chu1">
+				<div class="col-xs-4 push-xs-4 text-xs-center">
+					<p class="display-5">Information</p>
+					<p class="chu-nho">Our whereabouts</p>
+				</div>
+			</div>
+			<div class="row text-xs-center mt-2 chu2">
+				<div class="col-sm-6 push-sm-3">
+					<p class="nd-chu">Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+				</div>
+			</div>
+			<div class="row mt-2">
+					<ul class="list-icon">
+						<li>
+							<a href="#">
+								<i class="fa fa-map-marker icon"></i>
+								<span class="chu-icon">Ha Noi, Viet Nam</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-phone icon"></i>
+								<span class="chu-icon">1258455</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-envelope icon"></i>
+								<span class="chu-icon">savory.specials@gmail.com</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-facebook icon"></i>
+								<span class="chu-icon">Ha Noi, Viet Nam</span>
+							</a>
+						</li>
+						
+					</ul>
+				</div> <!-- het row2 -->
+
+					<div class="row mt-3 chu1">
+						<div class="col-xs-6 push-xs-3 text-xs-center">
+							<p class="display-5">Opening hours</p>
+							<p class="chu-nho">When are we open?</p>
+						</div>
+					</div>
+					<div class="row text-xs-center mt-2 chu2">
+						<div class="col-sm-6 push-sm-3">
+							<p class="nd-chu">Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+						</div>
+					</div> <!-- het row3 -->
+
+					<div class="row mt-2">
+						<ul class="list-hour" style="list-style: none;">
+							<li>
+								<p class="date">Thứ hai</p>
+								<div class="hour">8:00 - 22:00</div>
+							</li>
+							<li>
+								<p class="date">Thứ ba</p>
+								<div class="hour">8:00 - 22:00</div>
+							</li>
+							<li>
+								<p class="date">Thứ tư</p>
+								<div class="hour">8:00 - 22:00</div>
+							</li>
+							<li>
+								<p class="date">Thứ năm</p>
+								<div class="hour">Closed</div>
+							</li>
+							<li>
+								<p class="date">Thứ sáu</p>
+								<div class="hour">8:00 - 22:00</div>
+							</li>
+							<li>
+								<p class="date">Thứ bảy</p>
+								<div class="hour">10:00 - 20:00</div>
+							</li>
+							<li>
+								<p class="date">Chủ nhật</p>
+								<div class="hour">Closed</div>
+							</li>
+							
+						</ul>
+					</div> <!-- het row date -->
+
+					<div class="row mt-3 chu1">
+						<div class="col-xs-6 push-xs-3 text-xs-center">
+							<p class="display-5 text-xs-center">Message</p>
+							<p class="chu-nho">We'd like to hear from you</p>
+						</div>
+					</div>
+					<div class="row text-xs-center mt-2 chu2">
+						<div class="col-sm-6 push-sm-3">
+							<p class="nd-chu">Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in.</p>
+						</div>
+					</div> <!-- het row3 -->
+
+				<div class="container form-mess">
+					<div class="row">
+						<div class="col-sm-6 push-sm-3">
+							<form class="form-row">
+								<div class="row mt-3 ">
+							    <div class="col-sm-6 mb-1">
+							    	<input type="text" class="form-control name" placeholder="Your name">
+							    </div>
+							    <div class="col-sm-6">
+							     	<input type="text" class="form-control mail" placeholder="Your email">
+							    </div>
+							  </div>
+							</form>
+						</div>
+						
+					</div> <!-- het row -->
+
+					<div class="row mt-3">
+						<div class="col-sm-6 push-sm-3">
+							<form>
+						    <div class="form-row">
+						    	<textarea class="form-control cmt" placeholder="Your Feedback" rows="10" id="comment" name="text"></textarea>
+						    </div>
+						    <button type="submit" class="btn btn-outline-warning my-2">Submit</button>
+							</form>
+						</div>
+						
+					</div>
+				</div> <!-- het container form-mess -->
+		<div class="container footer mt-3">
+ 			<div class="row ">
+ 				<div class="col-xs-6 text-xs-center">
+ 					<h4 class="f-end mt-2">Written by</h4>
+ 					<p class="f-chu-ky">Specials</p>
+ 				</div>
+ 				<div class="col-xs-6 text-xs-right ">
+ 					<a href="#" class="float-xs-right top"> Back to top</a>
+ 				</div>
+ 			</div>
+ 		</div>
+		</div> <!-- het container nd-duoi-->
+ 	</div> <!-- het noi-dung -->
+	<script type="text/javascript" th:src="@{/vendor/bootstrap.js}"></script>
+	<script type="text/javascript" th:src="@{/js/contact.js}"></script>
+	<script type="text/javascript" th:src="@{/js/script.js}"></script>
+</body>
+</html>

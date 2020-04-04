@@ -1,0 +1,105 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	position: relative;
+	height: 100%;
+	background-color: #ece4ec;
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-warning {
+	background-color: #efbf31d4 !important;
+}
+.logo{
+	font-family: 'Dancing Script', cursive;
+	font-weight: 700;
+	font-size: 35px;
+	color: white;
+}
+.ds-dau li {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-top: 15px;
+
+}
+ul.ds-dau{
+	margin-right: 20px;
+}
+.tieu-de{
+	border-bottom: 3px solid orange;
+}
+.tieu-de .ten-td{
+	font-family: 'Dancing Script', cursive;
+	font-weight: 600;
+	display: inline-block;
+	position: relative;
+	top: 24px;
+	left: 0px;
+	background-color: #ece4ec;
+	width: 120px;
+	height: 40px;
+}
+.hang-nho{
+	height: 180px;
+}
+
+input#defaultCheck1 {
+	margin-left: 0px;
+}
+img.anh-cart{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	float: left;
+}
+.thong-tin{
+	font-family: 'Merriweather', serif;
+	font-weight: 600;
+}
+.phan-trang{
+	width: 100%;
+	height: 100px;
+
+}
+.footer{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 80px;
+	background-color: #88b2d47d;
+}
+label.form-check-label {
+	color: orangered;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+input.form-check-input {
+	margin-left: 0px;
+}
+a.btn.btn-warning.nut {
+	background-color: #ff5722;
+	border-radius: 10px;
+}
+@media (max-width: 576px){
+	*{}
+	input.form-control.note {
+		font-size: 12px;
+	}
+
+	p.gia-mon {
+		font-size: 14px;
+	}
+
+	p.ten-mon {
+		font-size: 14px;
+	}
+	.hang-nho{
+		height: 130px;
+	}
+	img.anh-cart{
+		height: 130px;
+	}
+}

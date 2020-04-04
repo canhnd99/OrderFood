@@ -1,0 +1,110 @@
+*{margin: 0; padding: 0;}
+body,html{
+	background-color: #ece4ec;
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-warning {
+	background-color: #efbf31d4 !important;
+}
+.logo{
+	font-family: 'Dancing Script', cursive;
+	font-weight: 700;
+	font-size: 35px;
+	color: white;
+}
+.ds-dau li {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-top: 15px;
+
+}
+.btn.btn-danger{
+	border-radius: 18px;
+	text-transform: none;
+}
+.slide{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+}
+/*img.anh-slide{
+	width: 100%;	
+	height: 400px ;
+	object-fit: cover;
+}*/
+.carousel-caption{
+	position: absolute;
+	top: 10%;
+	left: 0%;
+
+}
+h3.tieu-de-slide{
+	font-family: 'Dancing Script', cursive;
+	font-size: 40px;
+	font-weight: 700;
+
+}
+.gioi-thieu{
+	font-family: 'Merriweather', serif;
+}
+.gioi-thieu h3{
+	font-weight: 700;
+	text-align: center;
+}
+.gioi-thieu p{
+	margin-top: 30px;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+}
+.gioi-thieu p::first-letter{
+	font-size: xx-large;
+	color: #ff9800;
+}
+.duong-ke {
+	width: 200px;
+	border-bottom: 2px solid #ff9800;
+	margin:auto;
+	margin-top: 30px;
+}
+.footer{
+	background-color: #d2d2c4b3;
+}
+h4.f-end{
+	font-family: 'Merriweather', serif;
+	font-size: 25px;
+}
+p.f-chu-ky{
+	font-family: 'Sacramento', cursive;
+	font-size: 40px;
+}
+
+@media (max-width: 576px){
+	*{}
+
+	a.float-xs-right {
+		margin-top: -80px;
+	}
+	img.anh-slide {width: 100%;height: 270px !important;}
+
+	p.f-chu-ky {
+		font-size: 30px;
+	}
+
+	h4.f-end {
+		font-size: 15px;
+	}
+
+	p.gt-chu-nho {
+		font-size: 14px;
+	}
+
+	h3 {
+		font-size: 25px;
+	}
+
+	h3.tieu-de-slide {
+		font-size: 30px;
+	}
+}
