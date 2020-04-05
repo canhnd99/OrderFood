@@ -11,4 +11,8 @@ public class CategoryDto {
     private Long id;
     private String code;
     private String name;
+    public CategoryDto(String code, String name){
+        this.code = code;
+        this.name = name;
+    }
 }
