@@ -1,0 +1,32 @@
+
+*{margin:0; padding:0;}
+
+.col.login .nut-su {
+    background-color: #209690;
+}
+
+.col.login {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col .nut {
+    margin: auto;
+    display: table;
+    background-color: #209690;
+}
+
+.col {
+    margin-top: 20px;
+}
+
+.form-row {
+    width: 400px;
+    margin: auto;
+}
+.sign-in {
+    width: 500px;
+    margin: auto;
+    background-color: #efa333;
+    padding: 20px;
+}
