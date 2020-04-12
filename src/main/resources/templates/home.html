@@ -32,12 +32,88 @@
  		      <li class="nav-item">
  		        <a class="nav-link" href="http://localhost:8080/contact">Contact</a>
  		      </li>
- 		      <li class="nav-item">
- 		        <a href="" class="btn btn-danger">Sign in</a>
- 		      </li>
- 		      <li class="nav-item">
- 		        <a href="" class="btn btn-danger">Sign up</a>
- 		      </li>
+				<li class="nav-item">
+					<a class="nav-link btn btn-outline-danger nut" th:href="@{#}" data-toggle="modal" data-target="#login-modal">Sign in</a>
+					<div class="login">
+						<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;"><!-- //nền bị ẩn -->
+							<div class="modal-dialog">
+								<div class="show"> <!-- //phần login -->
+									<div class="modal-header">
+										<h4 class="modal-title" id="ModalLongTitle">Sign up</h4>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<form>
+										<div class="col user">
+											<input type="text" placeholder="Username">
+										</div>
+										<div class="col pass">
+											<input type="password" placeholder="Password">
+										</div>
+										<div class="col nut">
+											<a th:href="@{#}" class="btn btn-secondary">Login</a>
+										</div>
+									</form>
+
+									<div class="s-duoi">
+										<a th:href="@{#}">
+											<div class="form-check">
+												<input type="checkbox">
+												<label class="form-check-label" for="defaultCheck1">
+													Remember me
+												</label>
+											</div>
+										</a>
+										<a th:href="@{#}">Forgot Password</a>
+									</div>
+								</div> <!-- het show -->
+							</div> <!-- het modal-dialog -->
+						</div> <!-- het modal-fade -->
+					</div> <!-- het phan login -->
+				</li>
+				<li class="nav-item">
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-outline-danger nut" data-toggle="modal" data-target="#exampleModalLong">
+						Sign up
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-scroll" role="document dky">
+							<div class="modal-content show">
+								<div class="modal-header">
+									<h4 class="modal-title" id="exampleModalLongTitle">Sign up</h4>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<form>
+										<div class="col user">
+											<input type="text" placeholder="First Name">
+										</div>
+										<div class="col">
+											<input type="text" placeholder="Last Name">
+										</div>
+										<div class="col">
+											<input type="text" placeholder="Phone Number">
+										</div>
+										<div class="col">
+											<input type="text" placeholder="Your Address">
+										</div>
+										<div class="col pass">
+											<input type="password" placeholder="Password">
+										</div>
+										<div class="col nut">
+											<a th:href="@{#}" class="btn btn-secondary">Create Account</a>
+										</div>
+									</form>
+								</div> <!-- het modal-body -->
+							</div> <!-- het modal-content -->
+						</div>
+					</div>
+				</li>
 			</ul>
  		  </div>
  		</nav>	
