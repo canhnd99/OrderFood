@@ -1,4 +1,77 @@
 *{margin: 0; padding: 0;}
+
+input[type="checkbox"] {margin-right: -15px;}
+
+.modal-header .close {
+	margin-top: -70px;
+}
+
+.modal-header {
+	height: 80px;
+}
+
+a.btn.btn-secondary {
+	text-transform: capitalize;
+	font-family: 'Merriweather', serif;
+	font-size: 14px;
+	color: white;
+	margin: auto;
+	display: block;
+	background-color: #8b50f5;
+}
+
+.s-duoi a {text-transform: capitalize;color: #673ab7;}
+
+
+.s-duoi {
+	text-align: center;
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+	font-size: 14px;
+}
+
+form .col {
+	margin-bottom: 20px;
+}
+
+.col.user {
+	margin-top: 20px;
+}
+
+.col.nut {
+	margin-top: 30px;
+}
+
+form {
+	margin: auto;
+	display: table;
+}
+
+.modal-dialog {
+	height: fit-content;
+	margin-top: 10%;
+}
+
+.modal-dialog.modal-dialog-scroll {
+	height: fit-content;
+}
+
+.show h4 {
+	color: #efede9;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 24px;
+	/* margin-top: -22px; */
+	font-family: 'Dancing Script', cursive;
+	letter-spacing: 1.7px;
+	font-weight: 900;
+}
+
+h4#exampleModalLongTitle {
+	margin-top: -10px;
+}
+
 body,html{
 	background-color: #ece4ec;
 }
@@ -18,6 +91,14 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-warning {
 	margin-top: 15px;
 
 }
+
+.show {
+	background-color: #ffbd5cf5;
+	/* background-color: white; */
+	height: fit-content;
+	width: 320px;
+	margin: auto;
+}
 .btn.btn-danger{
 	border-radius: 18px;
 	text-transform: none;
@@ -28,11 +109,6 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-warning {
 	overflow: hidden;
 	position: relative;
 }
-/*img.anh-slide{
-	width: 100%;	
-	height: 400px ;
-	object-fit: cover;
-}*/
 .carousel-caption{
 	position: absolute;
 	top: 10%;
@@ -79,9 +155,30 @@ p.f-chu-ky{
 	font-family: 'Sacramento', cursive;
 	font-size: 40px;
 }
+.nut{
+	border-radius: 20px;
+	text-transform: none;
+}
 
+a.nav-link.btn.btn-outline-danger.nut:hover {
+	color: white;
+}
 @media (max-width: 576px){
 	*{}
+
+	h4.modal-title {
+		font-size: 18px;
+	}
+
+	.s-duoi {
+		font-size: small;
+	}
+
+	.show {
+		width: 270px;
+	}
+
+	a.nav-link.btn.btn-outline-danger.nut {display: inline;}
 
 	a.float-xs-right {
 		margin-top: -80px;
