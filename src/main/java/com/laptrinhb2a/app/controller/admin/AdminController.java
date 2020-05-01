@@ -35,7 +35,7 @@ public class AdminController {
     @GetMapping("/admin/register")
     public String showAdminRegisterPage(Model model){
         model.addAttribute("adminRegister", new AdminDto());
-        return "admin/registration";
+        return "admin/register";
     }
 
     @PostMapping("/admin/register")
