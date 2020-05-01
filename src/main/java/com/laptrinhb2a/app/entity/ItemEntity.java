@@ -11,7 +11,7 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 @Table(name = "item")
-public class Item implements Serializable {
+public class ItemEntity implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -35,15 +35,15 @@ public class Item implements Serializable {
     @JoinColumn(name = "category_id")
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
-    private Category category;
+    private CategoryEntity category;
 
     @OneToMany(mappedBy = "item")
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
-    private List<OrderItems> orderItems;
+    private List<OrderItemsEntity> orderItems;
 
     @ManyToMany(mappedBy = "items")
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
-    private List<Menu> menus;
+    private List<MenuEntity> menus;
 }

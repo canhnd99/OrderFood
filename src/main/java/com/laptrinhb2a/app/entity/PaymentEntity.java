@@ -10,7 +10,7 @@ import java.sql.Date;
 @NoArgsConstructor
 @Entity
 @Table(name = "payment")
-public class Payment {
+public class PaymentEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -28,5 +28,5 @@ public class Payment {
     @JoinColumn(name = "order_items_id")
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
-    private OrderItems orderItems;
+    private OrderItemsEntity orderItems;
 }

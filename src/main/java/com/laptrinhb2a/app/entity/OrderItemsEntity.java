@@ -10,7 +10,7 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 @Table(name = "order_item")
-public class OrderItems {
+public class OrderItemsEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -28,10 +28,10 @@ public class OrderItems {
     @JoinColumn(name = "item_id")
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
-    private Item item;
+    private ItemEntity item;
 
     @OneToMany(mappedBy = "orderItems")
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
-    private List<Payment> payment;
+    private List<PaymentEntity> payment;
 }

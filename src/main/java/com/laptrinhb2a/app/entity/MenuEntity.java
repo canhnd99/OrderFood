@@ -3,14 +3,15 @@ package com.laptrinhb2a.app.entity;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.Date;
 import java.util.List;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "category")
-public class Category {
+@Table(name = "menu")
+public class MenuEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -21,8 +22,18 @@ public class Category {
     @Column(nullable = false, length = 145)
     private String name;
 
-    @OneToMany(mappedBy = "category")
+    @Column(nullable = false)
+    private Date startDate;
+
+    @Column(nullable = false)
+    private Date endDate;
+
+    @ManyToMany
+    @JoinTable(name = "menu_item",
+            joinColumns = @JoinColumn(name = "menu_id"),
+            inverseJoinColumns = @JoinColumn(name = "item_id")
+    )
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
-    private List<Item> items;
+    private List<ItemEntity> items;
 }

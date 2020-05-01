@@ -11,7 +11,7 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 @Table(name = "cart")
-public class Cart {
+public class CartEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -29,5 +29,5 @@ public class Cart {
     )
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
-    private List<OrderItems> orderItems;
+    private List<OrderItemsEntity> orderItems;
 }
