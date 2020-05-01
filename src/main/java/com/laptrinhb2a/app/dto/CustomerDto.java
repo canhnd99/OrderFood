@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Customer {
+public class CustomerDto {
     private Long id;
     private String code;
     private String firstName;
@@ -15,8 +15,8 @@ public class Customer {
     private String email;
     private String address;
     private String phoneNo;
-    public Customer(String code, String firstName, String lastName,
-                    String email, String address, String phoneNo){
+    public CustomerDto(String code, String firstName, String lastName,
+                       String email, String address, String phoneNo){
         this.code = code;
         this.firstName = firstName;
         this.lastName = lastName;
